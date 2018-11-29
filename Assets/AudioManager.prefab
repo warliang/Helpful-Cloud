@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1176077732296560}
+  m_IsPrefabAsset: 1
+--- !u!1 &1176077732296560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4793966591770182}
+  - component: {fileID: 114328204202308208}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4793966591770182
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1176077732296560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.21315733, y: -0.34284136, z: 0.30869377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114328204202308208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1176077732296560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c8943dc1fd415458468c4e0cf6c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: fire_crackling_short
+    clip: {fileID: 8300000, guid: 3bd4f94c8abd5f442bac58df88127da1, type: 3}
+    volume: 0.51
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: zap
+    clip: {fileID: 8300000, guid: 79de0c71041c4944ba2b3d6299a099a9, type: 3}
+    volume: 0.89
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: THUNDER_short
+    clip: {fileID: 8300000, guid: d576c54dd85bc854d894c4bab2be689c, type: 3}
+    volume: 0.44
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: mouse_click
+    clip: {fileID: 8300000, guid: 4508d82ee58ffea4c8a344bebc0e8ff3, type: 3}
+    volume: 0.47
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Carefree Melody
+    clip: {fileID: 8300000, guid: 228bf493a9ff7ee4c995e07ba0955486, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: woodland_sounds_edited
+    clip: {fileID: 8300000, guid: 53e78757c0192f741ac88df787471be5, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: sleigh_bells_short
+    clip: {fileID: 8300000, guid: a0137c55540bbf547a8d6cee13fbede5, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hooray
+    clip: {fileID: 8300000, guid: 5f98f6752f851dd4ba1a0e89ec5f2cc7, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
