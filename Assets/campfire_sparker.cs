@@ -19,10 +19,10 @@ public class campfire_sparker : MonoBehaviour {
         points = true;
 
     }
-	
+
 	// Update is called once per frame
 	void Update () {
-        if (PlayerAnimator.GetBool("isLightning") == true 
+        if (PlayerAnimator.GetBool("isLightning") == true
             && PlayerTransformer.position.x < CampfireTransformer.position.x + 2
             && PlayerTransformer.position.x > CampfireTransformer.position.x + 1
             && PlayerTransformer.position.y < CampfireTransformer.position.y + 1){
@@ -34,8 +34,8 @@ public class campfire_sparker : MonoBehaviour {
             }
         }
 
-        
+
     }
 
-  
+
 }

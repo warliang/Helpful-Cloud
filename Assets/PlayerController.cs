@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
     public float speed;
@@ -9,18 +10,18 @@ public class PlayerController : MonoBehaviour {
     bool snow = false;
     bool windy = false;
     private Rigidbody2D rb2d;
-   
+
+    private int count;
+    public Text countText;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        count = 0;
+        setText();
     }
 
-    void Update()
-    {
-
-        
-
-
+    void Update() {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
@@ -66,6 +67,9 @@ public class PlayerController : MonoBehaviour {
         {
             Application.Quit();
         }
+    }
 
+    void setText() {
+      countText.text = "Points = " + count.ToString();
     }
 }

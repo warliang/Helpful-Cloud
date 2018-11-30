@@ -15,8 +15,7 @@ public class CatHappiness : MonoBehaviour
     public Animator BcatAnimator;
     public Transform BcatTransformer;
     public Renderer BcatRenderer;
-    
-    
+
     private int count;
     public Text countText;
     private bool points;
@@ -42,7 +41,7 @@ public class CatHappiness : MonoBehaviour
             OcatTransformer.localScale += new Vector3(0.001f, 0.001f, 0.001f);
 
             FindObjectOfType<AudioManager>().Play("hooray");
-            
+
         }
 
         if (PlayerAnimator.GetBool("isSnow") == true
