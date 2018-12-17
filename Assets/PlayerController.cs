@@ -6,6 +6,12 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour {
     public float speed;
     public Animator animator;
+
+    // public Transform PlayerTransformer;
+    // public Transform OcatTransformer;
+    // public Transform BcatTransformer;
+    // public Transform CampfireTransformer;
+
     bool lightning = false;
     bool snow = false;
     bool windy = false;
@@ -69,7 +75,56 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    // bool isWithinCat(Transform transformer) {
+    //   Vector3 playerPosition = PlayerTransformer.position;
+    //   Vector3 objectPosition = transformer.position;
+    //
+    //     if (playerPosition.x < objectPosition.x + 1 &&
+    //         playerPosition.x > objectPosition.x - 1 &&
+    //         playerPosition.y < objectPosition.y + 3) {
+    //           return true;
+    //         } else {
+    //             return false;
+    //         }
+    // }
+    //
+    // bool isWithinCamp(Transform tranformer) {
+    //   Vector3 playerPosition = PlayerTransformer.position;
+    //   Vector3 campPosition = tranformer.position;
+    //
+    //     if (playerPosition.x < campPosition.x + 2 &&
+    //         playerPosition.x > campPosition.x + 1 &&
+    //         playerPosition.y < campPosition.y + 1) {
+    //           return true;
+    //         } else {
+    //             return false;
+    //         }
+    // }
+
+    void OnTriggerStay2D(Collider2D col) {
+      if (col.gameObject.tag == "cat") {
+        Debug.Log("I have collided with a cat");
+        if (snow) {
+          addPoints(1);
+        }
+      }
+
+      if (col.gameObject.tag == "camp") {
+        campfire_sparker campScript = col.gameObject.GetComponent<campfire_sparker>();
+        if(lightning && !campScript.lit) {
+          Debug.Log("I have collided with a campfire");
+          addPoints(10);
+          campScript.isLit();
+        }
+      }
+    }
+
+    void addPoints(int amt) {
+      count = count + amt;
+      setText();
+    }
+
     void setText() {
-      countText.text = "Points = " + count.ToString();
+      countText.text = "Score: " + count.ToString();
     }
 }

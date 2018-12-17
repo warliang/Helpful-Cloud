@@ -9,14 +9,10 @@ public class campfire_sparker : MonoBehaviour {
     public Animator CampfireAnimator;
     public Transform CampfireTransformer;
 
-    private int count;
-    public Text countText;
-    private bool points;
+    public bool lit = false;
 
     // Use this for initialization
     void Start () {
-        count = 0;
-        points = true;
 
     }
 
@@ -33,8 +29,10 @@ public class campfire_sparker : MonoBehaviour {
                 FindObjectOfType<AudioManager>().Play("THUNDER_short");
             }
         }
+    }
 
-
+    public void isLit() {
+      lit = true;
     }
 
 
