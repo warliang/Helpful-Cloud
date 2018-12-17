@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 731
-  m_MinSize: {x: 681, y: 471}
-  m_MaxSize: {x: 14002, y: 14021}
+  m_MinSize: {x: 679, y: 471}
+  m_MaxSize: {x: 14000, y: 14021}
   vertical: 0
-  controlID: 2423
+  controlID: 17676
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 2424
+  controlID: 17677
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 2425
+  controlID: 17653
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,9 +203,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: da0d0000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 68f9ffffe4fbffff00000000d22e0000
+    m_SelectedIDs: 62650000
+    m_LastClickedID: 25954
+    m_ExpandedIDs: a4defaffc6e1faff2ce2faff6ee3faff92e3faff96e3faff4aecfafff4ecfaff36eefaff5aeefaff5eeefaffbcf9faff78fafaffbafbfaffdefbfaffe2fbfafffa05fbff7206fbffb407fbffd807fbffdc07fbff3013fbffa813fbffea14fbff0e15fbff1215fbff4a21fbff7825fbfff025fbff3227fbff3627fbff4027fbff3c46fbff7c67fbfff467fbff3669fbff5a69fbff5e69fbff2a80fbffe680fbff2882fbff4c82fbff5082fbff689afbff3c9cfbffaab5fbff6eb6fbffb0b7fbffb4b7fbffbeb7fbffd4e1fbff98e2fbffdae3fbffdee3fbffe8e3fbffa647fcffa0a6fcffce9dfdffc025feff68f9ffffe4fbffff00000000d22e0000d0530000fa640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -256,7 +256,7 @@ MonoBehaviour:
   - {fileID: 9}
   - {fileID: 10}
   m_Selected: 1
-  m_LastSelected: 3
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -283,14 +283,14 @@ MonoBehaviour:
     height: 395
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1215.3687109947205
+  lastFramingTime: 40564.15323603153
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 677.5027, y: 284.5344, z: -8.519486}
+    m_Target: {x: 464.18478, y: 192.38208, z: -5.6748266}
     speed: 2
-    m_Value: {x: 677.5027, y: 284.5344, z: -8.519486}
+    m_Value: {x: 464.18478, y: 192.38208, z: -5.6748266}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -322,9 +322,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 857.3925
+    m_Target: 891.1707
     speed: 2
-    m_Value: 857.3925
+    m_Value: 891.1707
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -425,14 +425,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.83128834
+    - e00: 1
       e01: 0
       e02: 0
-      e03: 70.16565
+      e03: 34.5
       e10: 0
-      e11: 0.83128834
+      e11: 1
       e12: 0
-      e13: 134.70552
+      e13: 161
       e20: 0
       e21: 0
       e22: 1
@@ -441,14 +441,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.5420168
+    - e00: 0.5535714
       e01: 0
       e02: 0
-      e03: -11.016815
+      e03: -11.571411
       e10: 0
-      e11: 0.5420168
+      e11: 0.5535714
       e12: 0
-      e13: 136.94958
+      e13: 166.16072
       e20: 0
       e21: 0
       e22: 1
@@ -458,10 +458,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: b953ab4757cb614418e07f71a7021a13,
+  m_AnimatorController: {fileID: 9100000, guid: bf400491e2b574140a6dd3a4a49f6dd9,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107057556254295014, guid: b953ab4757cb614418e07f71a7021a13,
+  - m_Target: {fileID: 1107045112521376728, guid: bf400491e2b574140a6dd3a4a49f6dd9,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -538,19 +538,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Cats/Blue
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 84
   m_LastFolders:
-  - Assets/Cats/Blue
+  - Assets/Scenes
   m_LastFoldersGridSize: 84
   m_LastProjectPath: /Users/warrenliang/School/Fall 2018/CS 108/Cloud Game Stuff
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 060b0000
-    m_LastClickedID: 2822
+    scrollPos: {x: 0, y: 191}
+    m_SelectedIDs: 86090000
+    m_LastClickedID: 2438
     m_ExpandedIDs: 0000000046090000f2090000760a0000280c0000720c0000b80c0000080d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -604,9 +604,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: da0d0000
-    m_LastClickedInstanceID: 3546
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 62650000
+    m_LastClickedInstanceID: 25954
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000000000009e0a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -677,8 +677,8 @@ MonoBehaviour:
     y: 0
     width: 317
     height: 731
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}

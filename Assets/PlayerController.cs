@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
     {
         rb2d = GetComponent<Rigidbody2D>();
         count = 0;
-        setText();
+        // setText();
     }
 
     void Update() {
@@ -101,30 +101,30 @@ public class PlayerController : MonoBehaviour {
     //         }
     // }
 
-    void OnTriggerStay2D(Collider2D col) {
-      if (col.gameObject.tag == "cat") {
-        Debug.Log("I have collided with a cat");
-        if (snow) {
-          addPoints(1);
-        }
-      }
-
-      if (col.gameObject.tag == "camp") {
-        campfire_sparker campScript = col.gameObject.GetComponent<campfire_sparker>();
-        if(lightning && !campScript.lit) {
-          Debug.Log("I have collided with a campfire");
-          addPoints(10);
-          campScript.isLit();
-        }
-      }
-    }
-
-    void addPoints(int amt) {
-      count = count + amt;
-      setText();
-    }
-
-    void setText() {
-      countText.text = "Score: " + count.ToString();
-    }
+    // void OnTriggerStay2D(Collider2D col) {
+    //   if (col.gameObject.tag == "cat") {
+    //     Debug.Log("I have collided with a cat");
+    //     if (snow) {
+    //       addPoints(1);
+    //     }
+    //   }
+    //
+    //   if (col.gameObject.tag == "camp") {
+    //     campfire_sparker campScript = col.gameObject.GetComponent<campfire_sparker>();
+    //     if(lightning && !campScript.lit) {
+    //       Debug.Log("I have collided with a campfire");
+    //       addPoints(10);
+    //       campScript.isLit();
+    //     }
+    //   }
+    // }
+    //
+    // void addPoints(int amt) {
+    //   count = count + amt;
+    //   setText();
+    // }
+    //
+    // void setText() {
+    //   countText.text = "Score: " + count.ToString();
+    // }
 }

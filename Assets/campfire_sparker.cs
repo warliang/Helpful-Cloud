@@ -9,6 +9,8 @@ public class campfire_sparker : MonoBehaviour {
     public Animator CampfireAnimator;
     public Transform CampfireTransformer;
 
+    public GameObject scoreManager;
+
     public bool lit = false;
 
     // Use this for initialization
@@ -23,6 +25,11 @@ public class campfire_sparker : MonoBehaviour {
             && PlayerTransformer.position.x > CampfireTransformer.position.x + 1
             && PlayerTransformer.position.y < CampfireTransformer.position.y + 1){
             CampfireAnimator.SetBool("sparked", true);
+
+            if (!lit) {
+              scoreManager.GetComponent<ScoreManagerScript>().addPoints(10);
+              lit = true;
+            }
 
             FindObjectOfType<AudioManager>().Play("fire_crackling_short");
             if (Random.Range(0, 20) < 1) {
