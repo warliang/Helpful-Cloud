@@ -16,15 +16,9 @@ public class CatHappiness : MonoBehaviour
     public Transform BcatTransformer;
     public Renderer BcatRenderer;
 
-    private int count;
-    public Text countText;
-    private bool points;
-
     // Use this for initialization
     void Start()
     {
-        count = 0;
-        points = true;
 
     }
 
@@ -37,8 +31,8 @@ public class CatHappiness : MonoBehaviour
             && PlayerTransformer.position.y < OcatTransformer.position.y + 3)
         {
             OcatAnimator.SetBool("snowed", true);
-            OcatRenderer.sortingOrder += 1;
-            OcatTransformer.localScale += new Vector3(0.001f, 0.001f, 0.001f);
+            //OcatRenderer.sortingOrder += 1;
+            OcatTransformer.localScale += new Vector3(0.001f, 0.001f, 0);
 
             FindObjectOfType<AudioManager>().Play("hooray");
 
@@ -50,8 +44,8 @@ public class CatHappiness : MonoBehaviour
             && PlayerTransformer.position.y < BcatTransformer.position.y + 3)
         {
             BcatAnimator.SetBool("snowed", true);
-            BcatRenderer.sortingOrder += 1;
-            BcatTransformer.localScale += new Vector3(0.001f, 0.001f, 0.001f);
+            //BcatRenderer.sortingOrder += 1;
+            BcatTransformer.localScale += new Vector3(0.001f, 0.001f, 0);
 
             FindObjectOfType<AudioManager>().Play("hooray");
         }

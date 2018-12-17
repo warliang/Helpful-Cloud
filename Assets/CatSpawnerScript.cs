@@ -40,9 +40,9 @@ public class CatSpawnerScript : MonoBehaviour {
             camp1.transform.position = Vector3.MoveTowards(camp1.transform.position, position1, speed);
             rand = Random.Range(4, 8);
             nextSpawn = Time.time + rand;
-            
+
             Destroy(camp1, lifetime);
-            
+
         }
 
         if (Time.time > nextSpawn2)
