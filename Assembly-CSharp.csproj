@@ -61,8 +61,10 @@
      <Compile Include="Assets\DestroybyTime.cs" />
      <Compile Include="Assets\Downloaded Scripts\BackgroundMoveScript.cs" />
      <Compile Include="Assets\Falling.cs" />
+     <Compile Include="Assets\LIfeSystemScript.cs" />
      <Compile Include="Assets\MenuController.cs" />
      <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\ScoreManagerScript.cs" />
      <Compile Include="Assets\scroll.cs" />
      <Compile Include="Assets\SineMovement.cs" />
      <Compile Include="Assets\Sound.cs" />
